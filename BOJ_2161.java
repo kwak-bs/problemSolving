@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BOJ_2161 {
-
+	// BOJ / 2161번 / 카드1 / 구현, 자료구조, 큐, 덱, 시뮬레이션 / 브2
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
