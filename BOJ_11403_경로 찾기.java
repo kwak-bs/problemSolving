@@ -44,7 +44,7 @@ public class BOJ_11403 {
 				
 				map[i][now] = 1;
 				for(int k=1; k<=n; k++) { 
-					if(map[now][k] == 1 && map[i][k] != 1) {
+					if(map[now][k] == 1 && map[i][k] != 1) { // map[now][k] 요것이 포인트
 						q.offer(k);
 					}
 				}
