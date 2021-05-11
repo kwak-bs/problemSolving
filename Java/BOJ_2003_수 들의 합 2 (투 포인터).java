@@ -1,4 +1,4 @@
-package problemSolve3;
+package problemSolve5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,39 +6,40 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class BOJ_2003 {
-	// BOJ / 2003번 / 수들의 합 2 / 투 포인터 / 실3
-	
-	static long num [];
-	
-	public static void main(String[] args) throws NumberFormatException, IOException {
-
+	// BOJ / 2003번 / 수 들의합2 / 투 포인터 / 실버3
+	public static void main(String[] args) throws IOException {
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		StringTokenizer stk = new StringTokenizer(br.readLine(), " ");
+		
 		int n = Integer.parseInt(stk.nextToken());
-		long m = Integer.parseInt(stk.nextToken());
-		
-		num= new long[n];
+		int m = Integer.parseInt(stk.nextToken());
 		stk = new StringTokenizer(br.readLine(), " ");
+		int [] arr = new int[n];
 		for(int i=0; i<n; i++) {
-			num[i] = Long.parseLong(stk.nextToken());
+			arr[i] = Integer.parseInt(stk.nextToken());
 		}
-		int start=0 , end =0, count = 0;
-		long sum = 0;
 		
+		int l = 0;
+		int r = 0;
+		int sum = 0;
+		int answer = 0;
 		while(true) {
 			
 			if(sum >= m) {
-				sum -= num[start++];
+				sum -= arr[l++];
 			}
-			else if(end == n) break;
+			else if( r == n) break;
 			else if(sum < m) {
-				sum += num[end++];
+				sum += arr[r++];
 			}
+			
 			if(sum == m) {
-				count++;
+				answer++;
 			}
 		}
 		
-		System.out.println(count);
+		System.out.println(answer);
 	}
 }
