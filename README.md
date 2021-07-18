@@ -70,13 +70,3 @@ SOL : 2021.04.06 골드5 시뮬레이션
 - 프로그래머스 스킬 체크 **레벨3**을 목표로 하고 있습니다. 
 
 <br/>
-
-## 성취도
-
-### 2021.04.06일 기준.
-
-![image](https://user-images.githubusercontent.com/51367622/113679475-c2419380-96fa-11eb-9ef5-cf936bb3590f.png)
-
-
-
-![image](https://user-images.githubusercontent.com/51367622/113679772-19dfff00-96fb-11eb-83e8-388425ec0ee6.png)
