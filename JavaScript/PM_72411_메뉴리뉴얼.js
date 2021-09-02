@@ -1,4 +1,4 @@
-// PM / KAKAO 2021 BLIND / Level 2 / 메뉴채팅방
+// PM / KAKAO 2021 BLIND / Level 2 / 메뉴리뉴얼
 
 function solution(orders, course) {
   let answer = [];
