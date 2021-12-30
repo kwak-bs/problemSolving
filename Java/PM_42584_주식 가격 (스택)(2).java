@@ -15,14 +15,20 @@ public class PM_42584_2 {
 
         Stack<Integer> start = new Stack<>();
         int i = 0;
-        start.add(i);
+        start.push(i);
         
         for(i=1; i<prices.length; i++) {
         	while(!start.isEmpty() && prices[i] < prices[start.peek()]) {
         		int index = start.pop();
         		answer[index] = i - index;
+        		System.out.println("hi");
         	}
-        	start.add(i);
+        	start.push(i);
+        }
+        
+        while(!start.isEmpty()) {
+        	int index = start.pop();
+        	answer[index] = prices.length-1 -index;
         }
         return answer;
     }
