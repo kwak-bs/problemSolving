@@ -16,6 +16,7 @@ const t = input[0];
 
 let dp = new Array(41).fill(0).map(_ => new Array(2).fill(0));
 
+// f(0) 호출 갯수, f(1) 호출 갯수
 dp[0][0] = 1;
 dp[1][1] = 1;
 
