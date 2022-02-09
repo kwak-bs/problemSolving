@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { deflateSync } = require('zlib');
 
 let input = (
   process.platform === 'linux'
