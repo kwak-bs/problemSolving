@@ -1,14 +1,7 @@
 const fs = require('fs');
 
 let input = (
-  process.platform === 'linux'
-    ? fs.readFileSync('/dev/stdin').toString()
-    : `5
-RRRBB
-GGBBB
-BBBRR
-BBRRR
-RRRRR`
+  process.platform === 'linux' ? fs.readFileSync('/dev/stdin').toString() : ``
 )
   .trim()
   .split('\n');
@@ -37,7 +30,6 @@ function solve() {
       }
     }
   }
-
   v = new Array(n).fill(false).map(() => new Array(n).fill(false));
   let rbCount = 0;
   for (let i = 0; i < n; i++) {
@@ -48,9 +40,7 @@ function solve() {
       }
     }
   }
-
   let answer = `${rgbCount} ${rbCount}`;
-
   console.log(answer);
 }
 
