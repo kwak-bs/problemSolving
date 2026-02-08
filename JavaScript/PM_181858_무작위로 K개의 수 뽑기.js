@@ -8,6 +8,7 @@ function solution(arr, k) {
         }
     }
 
+    //
     while (answer.length < k) {
         answer.push(-1);
     }
